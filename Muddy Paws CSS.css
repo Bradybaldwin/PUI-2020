@@ -87,10 +87,61 @@
     height: 457.03px;
     left: 15%;
     width: 69%;
-    top: 880px;
+    top: 550px;
     background: #9B9B9B;
     font-size: 48px;
     line-height: 130px;
     color: #FFFFFF;
     font-family: 'Concert One';
+}
+
+.harnessPics {
+    position: relative;
+    width: 15%;
+    height: 354px;
+    top: 1050px;
+    background-size: cover;
+    left: 16%;
+    padding-right: 39px;
+    z-index:1;
+    object-fit: cover;
+}
+
+#productGrid {
+    position: relative;
+    padding-left: 1%;
+    height: 600px;
+    left: 15%;
+    width: 69%;
+    top: 160px;
+    background: #C19F8B;
+    font-size: 48px;
+    line-height: 130px;
+    color: #FFFFFF;
+    font-family: 'Concert One';
+}
+
+.productPics {
+    position: relative;
+    width: 15%;
+    height: 400px;
+    top: 1060px;
+    background-size: cover;
+    left: 16%;
+    padding-right: 39px;
+    z-index:1;
+    object-fit: cover;
+}
+
+.productDesc {
+    position: relative;
+    width: 15%;
+    top: 1010px;
+    background-color: #9B9B9B;
+    color: white;
+    font-family: 'Concert One';
+    font-size: 40px;
+    text-align: center;
+    left: 16%;
+    z-index:1;
 }
