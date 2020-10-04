@@ -1,0 +1,96 @@
+/* Header */
+.header {
+    position: absolute;
+    width: 100%;
+    height: 155px;
+    left: 0px;
+    top: 0px;
+    background: #C19F8B;
+    background-image: url('images/muddy\ paws\ banner.png');
+    background-repeat: no-repeat;
+    background-position: -20px;
+}
+
+#siteTitle {
+    position: absolute;
+    left: 30%;
+    text-align: center;
+    top: 10px;
+    font-family: 'Lakki Reddy';
+    font-size: 140px;
+    line-height: 0px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Cats and Dogs Links */
+#catsPic {
+    position: absolute;
+    width: 33%;
+    height: 715.21px;
+    left: 15%;
+    top: 189px;
+    background-image: url('Images/Homepage\ Cat.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#shopCats {
+    position: absolute;
+    top: 400px; 
+    left: 15%;
+    right: 15%;
+    text-align: center;
+    font-family: 'Concert One';
+    color: white;
+    font-size: 80px;
+    padding: 10px 40px 10px 40px;
+    background: #C19F8B;
+    border: 10px solid #FFFFFF;
+    box-sizing: border-box;
+}
+
+#dogsPic {
+    position: absolute;
+    width: 33%;
+    height: 715.21px;
+    right: 15%;
+    top: 189px;
+    background-image: url('images/Homepage\ Dog.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#shopDogs {
+    position: absolute;
+    top: 400px; 
+    left: 15%;
+    right: 15%;
+    text-align: center;
+    font-family: 'Concert One';
+    color: white;
+    font-size: 80px;
+    padding: 10px 40px 10px 40px;
+    background: #C19F8B;
+    border: 10px solid #FFFFFF;
+    box-sizing: border-box;
+}
+
+
+/* Home page Grids */
+.homeGrids {
+    width: 100%;
+}
+
+#harnessGrid {
+    position: relative;
+    padding-left: 1%;
+    height: 457.03px;
+    left: 15%;
+    width: 69%;
+    top: 880px;
+    background: #9B9B9B;
+    font-size: 48px;
+    line-height: 130px;
+    color: #FFFFFF;
+    font-family: 'Concert One';
+}
