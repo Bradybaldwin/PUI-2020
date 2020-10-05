@@ -89,7 +89,7 @@ margin: 0px;
     height: 467px;
     left: 15%;
     width: 69%;
-    top: 550px;
+    top: 910px;
     background: #9B9B9B;
     font-size: 48px;
     line-height: 100px;
@@ -98,17 +98,24 @@ margin: 0px;
 }
 
 .harnessPics {
-    position: relative;
-    width: 15.9%;
+    width: 100%;
     height: 354px;
-    top: 1050px;
     background-size: cover;
-    left: 16%;
-    padding-right: 25px;
     z-index:1;
     object-fit: cover;
 }
 
+#harnessCollection {
+    position: relative;
+    z-index: 1;
+    width: 68%;
+    top: 480px;
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: auto;
+    justify-content: space-around;
+}
 #productGrid {
     position: absolute;
     padding-left: 1%;
@@ -123,17 +130,20 @@ margin: 0px;
     font-family: 'Concert One';
 }
 
-#tableMain {
+#productCollection {
     position: relative;
-    top: 620px;
-    margin-left: auto;
-    margin-right: auto;
-    border-spacing: 30px;
-    height: 400px;
+    z-index: 1;
+    width: 68%;
+    top: 650px;
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: auto;
+    justify-content: space-around;
 }
 
 .productPics {
-    width: 300px;
+    width: 100%;
     position: relative;
     height: 400px;
     object-fit: cover;
@@ -145,7 +155,7 @@ margin: 0px;
     font-family: 'Concert One';
     font-size: 40px;
     text-align: center;
-    width: 300px;
+    width: 100%;
     margin: 0px;
 }
 
@@ -155,7 +165,7 @@ footer{
     position: relative;
     width: 100%;
     background: #C19F8B;
-    top: 700px;
+    top: 800px;
 }
 
 #footerTable{
