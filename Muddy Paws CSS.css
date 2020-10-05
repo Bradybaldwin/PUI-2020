@@ -24,6 +24,11 @@
 }
 
 /* Cats and Dogs Links */
+
+body{
+margin: 0px;
+}
+
 #catsPic {
     position: absolute;
     width: 33%;
@@ -77,71 +82,88 @@
 
 
 /* Home page Grids */
-.homeGrids {
-    width: 100%;
-}
 
 #harnessGrid {
     position: relative;
     padding-left: 1%;
-    height: 457.03px;
+    height: 467px;
     left: 15%;
     width: 69%;
     top: 550px;
     background: #9B9B9B;
     font-size: 48px;
-    line-height: 130px;
+    line-height: 100px;
     color: #FFFFFF;
     font-family: 'Concert One';
 }
 
 .harnessPics {
     position: relative;
-    width: 15%;
+    width: 15.9%;
     height: 354px;
     top: 1050px;
     background-size: cover;
     left: 16%;
-    padding-right: 39px;
+    padding-right: 25px;
     z-index:1;
     object-fit: cover;
 }
 
 #productGrid {
-    position: relative;
+    position: absolute;
     padding-left: 1%;
-    height: 600px;
+    height: 570px;
     left: 15%;
     width: 69%;
-    top: 160px;
+    top: 1430px;
     background: #C19F8B;
     font-size: 48px;
-    line-height: 130px;
+    line-height: 100px;
     color: #FFFFFF;
     font-family: 'Concert One';
 }
 
-.productPics {
+#tableMain {
     position: relative;
-    width: 15%;
+    top: 620px;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 30px;
     height: 400px;
-    top: 1060px;
-    background-size: cover;
-    left: 16%;
-    padding-right: 39px;
-    z-index:1;
+}
+
+.productPics {
+    width: 300px;
+    position: relative;
+    height: 400px;
     object-fit: cover;
 }
 
 .productDesc {
-    position: relative;
-    width: 15%;
-    top: 1010px;
     background-color: #9B9B9B;
     color: white;
     font-family: 'Concert One';
     font-size: 40px;
     text-align: center;
-    left: 16%;
-    z-index:1;
+    width: 300px;
+    margin: 0px;
+}
+
+/* footer */
+
+footer{
+    position: relative;
+    width: 100%;
+    background: #C19F8B;
+    top: 700px;
+}
+
+#footerTable{
+    position: relative;
+    border-spacing: 30px;
+    font-size: 1.1em;
+    font-family: 'calibri';
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
 }
