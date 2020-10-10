@@ -31,6 +31,21 @@
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+#navBar{
+    position: absolute;
+    top: 155px;
+    display: grid;
+    grid-auto-columns: 1.5fr 2.5fr 2.5fr 2.5fr 1.5fr;
+    grid-auto-flow: column;
+    text-align: center;
+    font-family: 'Jost';
+    color: white;
+    font-size: 30px;
+    width: 100%;
+    background-color: #9B9B9B;
+    border: 5px 0px 5px 0px solid black;
+}
+
 /* Cats and Dogs Links */
 
 body{
@@ -42,7 +57,7 @@ margin: 0px;
     width: 33%;
     height: 715.21px;
     left: 15%;
-    top: 189px;
+    top: 220px;
     background-image: url('Images/Homepage\ Cat.jpg');
     background-size: cover;
     background-position: center;
@@ -68,7 +83,7 @@ margin: 0px;
     width: 33%;
     height: 715.21px;
     right: 15%;
-    top: 189px;
+    top: 220px;
     background-image: url('images/Homepage\ Dog.jpg');
     background-size: cover;
     background-position: center;
@@ -131,19 +146,19 @@ margin: 0px;
     height: 570px;
     left: 15%;
     width: 69%;
-    top: 1430px;
+    top: 1400px;
     background: #C19F8B;
     font-size: 48px;
     line-height: 100px;
     color: #FFFFFF;
-    font-family: 'JOst';
+    font-family: 'Jost';
 }
 
 #productCollection {
     position: relative;
     z-index: 1;
     width: 68%;
-    top: 650px;
+    top: 620px;
     display: grid;
     grid-column-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -174,7 +189,7 @@ footer{
     position: relative;
     width: 100%;
     background: #C19F8B;
-    top: 800px;
+    top: 700px;
 }
 
 #footerTable{
@@ -203,7 +218,7 @@ footer{
     color: white;
     font-family: 'JOst';
     font-size: 40px;
-    top: 200px;
+    top: 250px;
 }
 
 .generalProducts{
@@ -314,11 +329,11 @@ footer{
 
 #detailGrid{
     position: absolute;
-    top: 200px;
+    top: 210px;
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: [main-1] 6fr [main-2] 4fr;
-    grid-template-rows: auto auto auto 600px;
+    grid-template-rows: auto auto 150px auto;
     width: 70%;
     text-align: left;
     grid-column-gap: 60px;
@@ -350,7 +365,7 @@ footer{
     display: grid;
     grid-auto-flow: row;
     grid-template-columns: 1fr 8fr 1fr;
-    grid-template-rows: 9fr 1fr;
+    grid-template-rows: 8fr 2fr;
     grid-row: 3/5;
     text-align: center;
     width: 100%;
@@ -362,14 +377,15 @@ footer{
 
 .detailImages > img{
     object-fit: contain;
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 80%;
+    max-height: 80%;
 }
 
 #detailBackpack{
-    max-width: 80%;
+    max-width: 90%;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 20px;
 }
 
 #rightArrow{
@@ -379,6 +395,7 @@ footer{
 #detailSlides{
     grid-column: 1/4;
     margin: auto;
+    padding-bottom: 90px;
 }
 
 .selectorGrid{
@@ -431,7 +448,6 @@ background-color:#0beff3;
     grid-template-columns: auto;
     grid-template-rows: 110px 46px auto;
     grid-row-gap: 10px;
-    padding-top: 40px;
 }
 
 #wishlistGrid{
@@ -454,8 +470,13 @@ background-color:#0beff3;
 #reviewsGrid{
     display: grid;
     text-align: right;
-    grid-template-rows: 1fr 22px 152px 152px;
+    grid-template-rows: 1fr 22px 152px;
 }
+
+#reviewsGrid > img{
+    background-color: #9B9B9B;
+}
+
 
 #reviewsTitle{
     font-size: 20px;
