@@ -11,6 +11,14 @@
     background-position: -20px;
 }
 
+#productHead{
+    background-image: url('Images/muddy\ paws\ banner\ cats.png');
+}
+
+#detailHead{
+    background-image: url('Images/muddy\ paws\ banner\ detail\ page.png');
+}
+
 #siteTitle {
     position: absolute;
     left: 30%;
@@ -42,13 +50,13 @@ margin: 0px;
 
 #shopCats {
     position: absolute;
-    top: 400px; 
+    top: 380px; 
     left: 15%;
     right: 15%;
     text-align: center;
-    font-family: 'Concert One';
+    font-family: 'Jost';
     color: white;
-    font-size: 80px;
+    font-size: 75px;
     padding: 10px 40px 10px 40px;
     background: #C19F8B;
     border: 10px solid #FFFFFF;
@@ -64,16 +72,17 @@ margin: 0px;
     background-image: url('images/Homepage\ Dog.jpg');
     background-size: cover;
     background-position: center;
+
 }
 #shopDogs {
     position: absolute;
-    top: 400px; 
+    top: 380px; 
     left: 15%;
     right: 15%;
     text-align: center;
-    font-family: 'Concert One';
+    font-family: 'JOst';
     color: white;
-    font-size: 80px;
+    font-size: 75px;
     padding: 10px 40px 10px 40px;
     background: #C19F8B;
     border: 10px solid #FFFFFF;
@@ -94,7 +103,7 @@ margin: 0px;
     font-size: 48px;
     line-height: 100px;
     color: #FFFFFF;
-    font-family: 'Concert One';
+    font-family: 'JOst';
 }
 
 .harnessPics {
@@ -127,7 +136,7 @@ margin: 0px;
     font-size: 48px;
     line-height: 100px;
     color: #FFFFFF;
-    font-family: 'Concert One';
+    font-family: 'JOst';
 }
 
 #productCollection {
@@ -152,7 +161,7 @@ margin: 0px;
 .productDesc {
     background-color: #9B9B9B;
     color: white;
-    font-family: 'Concert One';
+    font-family: 'JOst';
     font-size: 40px;
     text-align: center;
     width: 100%;
@@ -176,4 +185,278 @@ footer{
     margin-left: auto;
     margin-right: auto;
     color: white;
+}
+
+#footerTableProducts{
+    position: relative;
+    top: 1000px;
+}
+
+#footerTableDetails{
+    top: 1200px;
+}
+
+/* Product Page */
+
+.generalProducts{
+    position: absolute;
+    color: white;
+    font-family: 'JOst';
+    font-size: 40px;
+    top: 200px;
+}
+
+.generalProducts{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: [main-1] 3.8fr [main-2] 3.8fr [side-1] 2.4fr;
+    grid-template-rows: auto auto;
+    width: 70%;
+    text-align: center;
+    grid-column-gap: 30px;
+    grid-row-gap: 10px;
+    left: 15%;
+}
+
+.productClass{
+    background: #C19F8B;
+}
+
+.productHead{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #9B9B9B;
+    padding: 5px;
+}
+
+.productName{
+    text-align: left;
+}
+
+.productPrice{
+    text-align: right;
+}
+
+.pairHeadAndShop{
+    display: grid;
+    grid-template-rows: 60px auto;
+    grid-row-gap: 0px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(images/Cat\ Backpack.jpg);
+}
+
+#harnessHeadAndShop{
+    background-image: url(images/Cat\ Harness.jpg);
+}
+
+#packShop{
+    align-self: end;
+    background: #C19F8B;
+    width: 40%;
+    font-size: 150%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #9B9B9B;
+}
+
+#harnessShop{
+    align-self: end;
+    background: #C19F8B;
+    width: 40%;
+    font-size: 150%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #9B9B9B;
+}
+
+#sideCombo{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: 290px 290px;
+    text-align: center;
+    grid-row-gap: 10px;
+}
+
+#GPSHead{
+    font-size:100%;
+}
+
+#waterHead{
+    font-size:100%;
+}
+
+#GPSHeadAndShop{
+    background-image: url(Images/GPS.jpg);
+}
+
+#waterHeadAndShop{
+    background-image: url(Images/Pet\ water\ bottle.jpg);
+}
+
+#GPSShop{
+    align-self: end;
+    background: #C19F8B;
+    width: 40%;
+    font-size: 100%;
+    border: 3px solid #9B9B9B;
+}
+
+#waterShop{
+    align-self: end;
+    background: #C19F8B;
+    width: 40%;
+    font-size: 100%;
+    border: 3px solid #9B9B9B;
+}
+
+/* Product Detail Page */
+
+#detailGrid{
+    position: absolute;
+    top: 200px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: [main-1] 6fr [main-2] 4fr;
+    grid-template-rows: auto auto auto 600px;
+    width: 70%;
+    text-align: left;
+    grid-column-gap: 60px;
+    grid-row-gap: 10px;
+    left: 15%;
+    font-family: 'JOst';
+}
+
+#detailTitle{
+    font-size: 50px;
+}
+
+#detailPrice{
+    font-size: 50px;
+    text-align: right;
+}
+
+#detailTitleAndPrice{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#detailDesc{
+    font-size: 20px;
+    grid-row: 2/3;
+}
+
+#detailLeft{
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: 9fr 1fr;
+    grid-row: 3/5;
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.detailImages > img{
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#detailBackpack{
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#rightArrow{
+    transform: scaleX(-1);
+}
+
+#detailSlides{
+    grid-column: 1/4;
+    margin: auto;
+}
+
+.selectorGrid{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 26px 46px;
+    grid-row: 2/3;
+}
+
+.selectorClass{
+    font-size: 20px;
+}
+
+#sizeDropDown{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #9B9B9B;
+    padding: 5px;
+    font-size: 25px;
+    color: white;
+}
+
+.selectorTitle{
+    text-align: left;
+}
+
+.chevronDD{
+    text-align: right;
+}
+
+#colorSelector{
+    grid-row: auto;
+}
+#colorDropDown{
+    display: grid;
+    grid-template-columns: .8fr 8.2fr 1fr;
+    column-gap: 5px;
+    background-color: #9B9B9B;
+    padding: 5px;
+    font-size: 25px;
+    color: white;
+}
+
+#colorSquare{
+background-color:#0beff3;
+}
+
+#detailRightGrid{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 110px 46px auto;
+    grid-row-gap: 10px;
+    padding-top: 40px;
+}
+
+#wishlistGrid{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #9B9B9B;
+    padding: 5px;
+    font-size: 25px;
+    color: white;
+}
+
+#addToCart{
+    text-align: center;
+    background-color: #C19F8B;
+    font-size: 80px;
+    color: white;
+    padding: 5px
+}
+
+#reviewsGrid{
+    display: grid;
+    text-align: right;
+    grid-template-rows: 1fr 22px 152px 152px;
+}
+
+#reviewsTitle{
+    font-size: 20px;
 }
