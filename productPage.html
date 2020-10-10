@@ -8,6 +8,9 @@
     <link href='https://fonts.googleapis.com/css?family=Jost' rel='stylesheet'>
 </Head>
 <body>
+
+<!-- Header plus site title plus nav bar -->
+
     <header class='header' id="productHead">
         <h1 id="siteTitle">Muddy Paws</h1>
         <nav id=navBar>
@@ -18,34 +21,67 @@
             <div></div>
         </nav>
     </header>
+
+<!-- All Main Page Content -->
+
     <div class='generalProducts'>
+
+<!-- Column for Backpacks -->
+
         <div class='productClass' id='productBackpacks'>BACKPACKS</div>
-            <div class=pairHeadAndShop>
-                <div class='productHead' id='packHead'>
-                    <div class='productName' id='productCamppack'>Camping Pack</div>
-                    <div class='productPrice' id='packPrice'>$100</div>
+            <div class='contentAndRadios'>
+                <div class=pairHeadAndShop>
+                    <div class='productHead' id='packHead'>
+                        <div class='productName' id='productCamppack'>Camping Pack</div>
+                        <div class='productPrice' id='packPrice'>$100</div>
+                    </div>
+                    <a href="productDetailPage.html" class='productShop' id='packShop'>Shop</a>
                 </div>
-                <div class='productShop' id='packShop'>Shop</div>
-            </div>
+                <div class='radioSlides'>
+                    <div class='arrowSlides'>&lt;</div>
+                    <div class='slideSelect' id='activeSlide'>1</div>
+                    <div class='slideSelect'>2</div>
+                    <div class='slideSelect'>3</div>
+                    <div class='slideSelect'>4</div>
+                    <div class='arrowSlides'>&gt;</div>
+                </div>
+            </div>  
+
+<!-- Column for Harnesses -->
+
         <div class='productClass' id='productHarness'>HARNESSES</div>
-            <div class=pairHeadAndShop id=harnessHeadAndShop>
-                <div class='productHead' id='harnessHead'>
-                    <div class='productName' id='productHarnessName'>Athletic Harness</div>
-                    <div class='productPrice' id='harnessPrice'>$30</div>
+            <div class='contentAndRadios'>
+                <div class=pairHeadAndShop id=harnessHeadAndShop>
+                    <div class='productHead' id='harnessHead'>
+                        <div class='productName' id='productHarnessName'>Athletic Harness</div>
+                        <div class='productPrice' id='harnessPrice'>$30</div>
+                    </div>
+                    <div class='productShop' id='harnessShop'>Shop</div>
                 </div>
-                <div class='productShop' id='harnessShop'>Shop</div>
+                <div class='radioSlides'>
+                    <div class='arrowSlides'>&lt;</div>
+                    <div class='slideSelect' id='activeSlide'>1</div>
+                    <div class='slideSelect'>2</div>
+                    <div class='slideSelect'>3</div>
+                    <div class='slideSelect'>4</div>
+                    <div class='arrowSlides'>&gt;</div>
+                </div>
             </div>
+            
+
+<!-- Column for Accessories -->
+
         <div class='productClass' id='productGPS'>ACESSORIES</div>
         <div id='sideProducts'>
             <div id=sideCombo>
-                <div class=pairHeadAndShop id=GPSHeadAndShop>
+                <div class='pairHeadAndShopSide' id='GPSHeadAndShop'>
                     <div class='productHead' id='GPSHead'>
                         <div class='productName' id='productGPSName'>GPS</div>
                         <div class='productPrice' id='GPSPrice'>$75</div>
                     </div>
                     <div class='productShop' id='GPSShop'>Shop</div>
                 </div>
-                <div class=pairHeadAndShop id=waterHeadAndShop>
+                <div class='pairHeadAndShopSide' id='waterHeadAndShop'>
                     <div class='productHead' id='waterHead'>
                         <div class='productName' id='productWaterName'>Water Bottle</div>
                         <div class='productPrice' id='waterPrice'>$25</div>
@@ -55,6 +91,9 @@
             </div>
         </div>
     </div>
+
+    <!-- Footer -->
+
     <Footer id='footerTableProducts'>
         <table id='footerTable'>
             <tr>
