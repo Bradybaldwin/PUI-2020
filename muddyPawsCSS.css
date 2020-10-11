@@ -44,7 +44,6 @@
     font-size: 30px;
     width: 100%;
     background-color: #9B9B9B;
-    border: 5px 0px 5px 0px solid black;
 }
 
 a:-webkit-any-link {
@@ -278,18 +277,16 @@ footer{
 
 .slideSelect{
     background-color: white;
-    border-radius: 10deg;
     border: 2px solid #9B9B9B;
     color: black;
 }
 
 .arrowSlides{
     background-color: #9B9B9B;
-    border-radius: 10deg;
     border: 5px solid white;
 }
 
-#activeSlide{   
+.activeSlide{   
     background-color: #9B9B9B;
     color: white;
     border: 5px solid #C19F8B;
