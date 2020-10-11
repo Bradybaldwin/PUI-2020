@@ -7,17 +7,17 @@
     left: 0px;
     top: 0px;
     background: #C19F8B;
-    background-image: url('images/muddy\ paws\ banner.png');
+    background-image: url('Images/muddy_paws_banner.png');
     background-repeat: no-repeat;
     background-position: -20px;
 }
 
 #productHead{
-    background-image: url('Images/muddy\ paws\ banner\ cats.png');
+    background-image: url('Images/muddy_paws_banner_cats.png');
 }
 
 #detailHead{
-    background-image: url('Images/muddy\ paws\ banner\ detail\ page.png');
+    background-image: url('Images/muddy_paws_banner_detail_page.png');
 }
 
 #siteTitle {
@@ -65,7 +65,7 @@ margin: 0px;
     height: 715.21px;
     left: 15%;
     top: 220px;
-    background-image: url('Images/Homepage\ Cat.jpg');
+    background-image: url('Images/Homepage_Cat.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -91,7 +91,7 @@ margin: 0px;
     height: 715.21px;
     right: 15%;
     top: 220px;
-    background-image: url('Images/Homepage\ Dog.jpg');
+    background-image: url('Images/Homepage_Dog.jpg');
     background-size: cover;
     background-position: center;
 
@@ -301,7 +301,7 @@ footer{
     grid-row-gap: 0px;
     background-size: cover;
     background-position: center;
-    background-image: url('Images/Cat\ Backpack.jpg');
+    background-image: url('Images/Cat_Backpack.jpg');
 }
 
 .pairHeadAndShopSide{
@@ -310,11 +310,11 @@ footer{
     grid-row-gap: 0px;
     background-size: cover;
     background-position: center;
-    background-image: url('Images/Cat\ Backpack.jpg');
+    background-image: url('Images/Cat_Backpack.jpg');
 }
 
 #harnessHeadAndShop{
-    background-image: url('Images/Cat\ Harness.jpg');
+    background-image: url('Images/Cat_Harness.jpg');
 }
 
 #packShop{
@@ -358,7 +358,7 @@ footer{
 }
 
 #waterHeadAndShop{
-    background-image: url('Images/Pet\ water\ bottle.jpg');
+    background-image: url('Images/Pet_water_bottle.jpg');
 }
 
 #GPSShop{
