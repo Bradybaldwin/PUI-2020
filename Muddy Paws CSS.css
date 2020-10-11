@@ -91,7 +91,7 @@ margin: 0px;
     height: 715.21px;
     right: 15%;
     top: 220px;
-    background-image: url('images/Homepage\ Dog.jpg');
+    background-image: url('Images/Homepage\ Dog.jpg');
     background-size: cover;
     background-position: center;
 
@@ -262,15 +262,18 @@ footer{
 .contentAndRadios{
     display: grid;
     grid-template-rows: 590px 50px;
-    grid-row-gap: 20px;
+    grid-row-gap: 10px;
 }
 
 .radioSlides{
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
     grid-template-rows: 50px;
-    grid-column-gap: 15px;
+    grid-column-gap: 20px;
     align-items: center;
+    width: 60%;
+    margin: auto;
+    font-size: 20px;
 }
 
 .slideSelect{
@@ -298,7 +301,7 @@ footer{
     grid-row-gap: 0px;
     background-size: cover;
     background-position: center;
-    background-image: url(images/Cat\ Backpack.jpg);
+    background-image: url('Images/Cat\ Backpack.jpg');
 }
 
 .pairHeadAndShopSide{
@@ -307,11 +310,11 @@ footer{
     grid-row-gap: 0px;
     background-size: cover;
     background-position: center;
-    background-image: url(images/Cat\ Backpack.jpg);
+    background-image: url('Images/Cat\ Backpack.jpg');
 }
 
 #harnessHeadAndShop{
-    background-image: url(images/Cat\ Harness.jpg);
+    background-image: url('Images/Cat\ Harness.jpg');
 }
 
 #packShop{
@@ -351,11 +354,11 @@ footer{
 }
 
 #GPSHeadAndShop{
-    background-image: url(Images/GPS.jpg);
+    background-image: url('Images/GPS.jpg');
 }
 
 #waterHeadAndShop{
-    background-image: url(Images/Pet\ water\ bottle.jpg);
+    background-image: url('Images/Pet\ water\ bottle.jpg');
 }
 
 #GPSShop{
