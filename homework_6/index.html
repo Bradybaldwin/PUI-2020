@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<Head>
+    <title>Muddy Paws Home Page</title>
+    <meta charset="UTF-8">
+    <script src="MuddyPawsJS.js"></script>
+    <link rel="stylesheet" href="muddyPawsCSS.css">
+    <link href='https://fonts.googleapis.com/css?family=Lakki Reddy' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Jost' rel='stylesheet'>
+</Head>
+<body>
+
+<!-- Header plus site title plus nav bar -->
+
+    <header class='header'>
+        <h1 id="siteTitle">Muddy Paws</h1>
+        <nav id=navBar>
+            <div></div>
+            <div class=navBarOpt>Cats</div>
+            <div class=navBarOpt>Dogs</div>
+            <div class=navBarOpt>Shop By Product</div>
+            <div></div>
+        </nav>
+    </header>
+
+<!-- Main Cat and Dog Images -->
+
+    <div id=catsPic>
+        <a href='productPage.html'><h2 id='shopCats' class='homeSpecies'>Shop<br>Cats</h2></a>
+    </div> 
+    <div id=dogsPic>
+        <h2 id='shopDogs' class='homeSpecies'>Shop Dogs</h2>
+     </div>
+
+<!-- Harness Grid -->
+
+    <h3 id='harnessGrid'>New Harness Collection</h3>
+    <div id=harnessCollection>
+        <div><img class='harnessPics' id ='harness1' src='Images/Dog_Harness.jpg' alt='Harness One'></div>
+        <div><img class='harnessPics' id ='harness2' src='Images/Dog_Harness_2.jpg' alt='Harness Two'></div>
+        <div><img class='harnessPics' id ='harness3' src='Images/Dog_Harness_3.jpg' alt='Harness Three'></div>
+        <div><img class='harnessPics' id ='harness4' src='Images/Dog_Harness_4.jpg' alt='Harness Four'></div>
+    </div>
+
+<!-- Product Grid -->
+
+    <h3 id='productGrid'>Shop By Product</h3>
+    <div id='productCollection'>
+        <div>
+            <a href='productDetailPage.html'><img class='productPics' id ='product1' src='Images/Cat_Backpack.jpg' alt='Backpack With Cat Inside'>
+            <p class='productDesc'>Cat Packs</p></a>
+        </div>
+        <div>
+            <img class='productPics' id ='product2' src='Images/Cat_Harness.jpg' alt='Cat Wearing Harness'>
+            <p class='productDesc'>Harnesses</p>
+        </div>
+        <div>
+            <img class='productPics' id ='product3' src='Images/Dog_Dish.jpg' alt='A Dogs Dish'>
+            <p class='productDesc'>Food & Water</p>
+        </div>
+        <div>
+            <img class='productPics' id ='product4' src='Images/Dog_Leash.jpg' alt='Dog Wearing Leash'>
+            <p class='productDesc'>Leashes</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    
+    <Footer>
+        <table id='footerTable'>
+            <tr>
+                <td><p class='footerText'>About</p></td>
+                <td><p class='footerText'>Contact & Support</p></td>
+            </tr>
+            <tr>
+                <td><p class='footerText'>Shipping Policy</p></td>
+                <td><p class='footerText'>Jobs</p></td>
+            </tr>
+            <tr><td><p class='footerText'>Return Policy</p></td>
+                <td><p class='footerText'>Partner Programs</p></td>
+            </tr>
+            <tr>
+                <td><p class='footerText'>Terms & Conditions</p></td>
+                <td><p class='footerText'>Donate</p></td>
+            </tr>
+        </table>
+    </Footer>
+</body>
+</html>
