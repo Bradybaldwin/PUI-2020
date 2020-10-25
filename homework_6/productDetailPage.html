@@ -14,6 +14,10 @@
 
     <header class='header' id="detailHead">
         <h1 id="siteTitle">Muddy Paws</h1>
+        <div id=cartHead>
+            <a href="shoppingCart.html"><img src="Images/white-shopping-cart-icon.jpg" alt="Shopping Cart" id='cartLogo'></img></a>
+            <div id='cartCount'>0</div>
+        </div>
         <nav id=navBar>
             <div></div>
             <div class=navBarOpt>Cats</div>
@@ -54,18 +58,23 @@
 
         <div class='selectorGrid'>
             <div class='selectorClass'>Size</div>
-            <div id='sizeDropDown'>
-                <div class='selectorTitle'>Small (30 Liter)</div>
-                <div class='chevronDD'>&#x25BC;</div>
-                <div></div>
+            <div class='selectDropDown'>
+                <select name='size' class='selectDropDown' id='sizeDropDown'>
+                    <option value='Small (30 Liters)'>Small (30 Liters)</option>
+                    <option value='Medium (40 Liters)'>Medium (40 Liters)</option>
+                    <option value='Large (50 Liters)'>Large (50 Liters)</option>
+                </select>
             </div>
         </div>
         <div class='selectorGrid' id=colorSelector>
             <div class='selectorClass'>Color</div>
-            <div id='colorDropDown'>
+            <div class='selectDropDown'>
                 <div id='colorSquare'></div>
-                <div class='selectorTitle'>Tropical Teal</div>
-                <div class='chevronDD'>&#x25BC;</div>
+                <select name='size' class='selectDropDown' id='colorDropDown'>
+                    <option value='Tropical Teal' id='tealSelect'> Tropical Teal</option>
+                    <option value='Galaxy Purple' id='purpleSelect'> Galaxy Purple</option>
+                    <option value='Verdant Green' id='greenSelect'> Verdant Green</option>
+                </select>
             </div>
         </div>
     

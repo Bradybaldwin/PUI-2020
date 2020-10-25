@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <Head>
-    <title>Muddy Paws Home Page</title>
+    <title>Muddy Cart Page</title>
     <meta charset="UTF-8">
     <script src="MuddyPawsJS.js"></script>+
     <link rel="stylesheet" href="muddyPawsCSS.css">
@@ -14,17 +14,49 @@
 
     <header class='header'>
         <h1 id="siteTitle">Muddy Paws</h1>
-        <nav id=navBar>
+        <div id=cartHead>
+            <a href="shoppingCart.html"><img src="Images/white-shopping-cart-icon.jpg" alt="Shopping Cart" id='cartLogo'></img></a>
+            <div id='cartCount'>0</div>
+        </div>
+        <nav id='navBar'>
             <div></div>
-            <div class=navBarOpt>Cats</div>
-            <div class=navBarOpt>Dogs</div>
-            <div class=navBarOpt>Shop By Product</div>
+            <div class='navBarOpt'>Cats</div>
+            <div class='navBarOpt'>Dogs</div>
+            <div class='navBarOpt'>Shop By Product</div>
             <div></div>
         </nav>
     </header>
 
 <!-- Cart and Summary -->
-
+<div id='cartPageGrid'>
+    <div class='cartColHead'>Cart</div>
+    <div>
+        <div id='cartNoItems'>No Items in Cart</div>
+    </div>
+    <div class='cartColHead'>Summary</div>
+    <div id='cartSummaryGrid'>
+        <div class='cartSummarySections'>
+            <div>Subtotal</div>
+            <div class='cartPrices' id='cartSubPrice'>$0 USD</div>
+        </div>
+        <div class='cartSummarySections'>
+            <div>Shipping</div>
+            <div class='cartPrices' id='cartShipPrice'>$0 USD</div>
+        </div>
+        <div class='cartSummarySections'>
+            <div>Tax</div>
+            <div class='cartPrices' id='cartTaxPrice'>Calc. at Checkout</div>
+        </div>
+        <div id='summaryBreak'></div>
+        <div class='cartSummarySections' id='cartTotalRow'>
+            <div>Total</div>
+            <div class='cartPrices' id='cartTotalPrice'>$0 USD</div>
+        </div>
+        <div>
+            <div id='cartCheckOut'>Check Out</div>
+        </div>
+    </div>
+</div>
 
 <!-- Footer -->
 
