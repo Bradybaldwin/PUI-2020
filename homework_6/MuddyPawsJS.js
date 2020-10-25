@@ -6,3 +6,11 @@ class Order {
         this.color = color;
     }
 }
+
+
+
+function addToCart(){
+    var cartTotalDisplay = document.getElementById('cartCount').innerHTML;
+    var cartCounter = document.getElementById('cartCount');
+    cartCounter.innerHTML = Number(cartTotalDisplay) + 1;
+}
