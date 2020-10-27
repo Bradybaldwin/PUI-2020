@@ -523,6 +523,7 @@ footer{
 }
 
 #addToCart{
+    cursor: pointer;
     text-align: center;
     background-color: #C19F8B;
     font-size: 80px;
@@ -568,8 +569,8 @@ footer{
 }
 
 #cartNoItems{
-    font-size: 40px;
-    text-align: center;
+    font-size: 30px;
+    text-align: left;
     padding-top: 30px;
     padding-bottom: 30px;
 }

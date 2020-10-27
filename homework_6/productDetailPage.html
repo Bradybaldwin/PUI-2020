@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang='en'>
 <Head>
-    <title>Mudy Paws Cat Backpack Page</title>
+    <title id='a'>Mudy Paws Cat Backpack Page</title>
     <meta charset="UTF-8">
     <script src="MuddyPawsJS.js"></script>
     <link rel="stylesheet" href="muddyPawsCSS.css">
     <link href='https://fonts.googleapis.com/css?family=Lakki Reddy' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Jost' rel='stylesheet'>
 </Head>
-<body>
+<body onload="cartCountPersist()" onunload="storeCartOrder()">
 
 <!-- Header plus site title plus nav bar -->
 
@@ -28,7 +28,6 @@
     </header>
 
 <!-- Grid for all Main Page Content -->
-
     <div id='detailGrid'>
         <div id=detailTitleAndPrice>
             <div id='detailTitle'>The Cat Camper Pack</div>
@@ -44,7 +43,7 @@
 <!-- Grid-in-Grid for product image -->
         <div id='detailLeft'>
             <div class='detailImages'><img src='Images/Selection_Arrow.JPG' alt="Arrow For Changing Picture Left"></div>
-            <div class='detailImages' id='detailBackpack'><img src='Images/Cat_Backpack_crop.jpg' alt="Cat In Backpack"></div>
+            <div class='detailImages' id='detailBackpack'><img src='Images/Cat_Backpack_crop.jpg' alt="Cat In Backpack" id=backpackGraphic></div>
             <div class='detailImages' id='rightArrow'><img src='Images/Selection_Arrow.JPG' alt="Arrow For Changing Picture Right"></div>
             <div id='detailSlides'>
                 <input type="radio" name="pickImage" value="1" checked>
@@ -59,10 +58,10 @@
         <div class='selectorGrid'>
             <div class='selectorClass'>Size</div>
             <div class='selectDropDown'>
-                <select name='size' class='selectDropDown' id='sizeDropDown'>
-                    <option value='Small (30 Liters)'>Small (30 Liters)</option>
-                    <option value='Medium (40 Liters)'>Medium (40 Liters)</option>
-                    <option value='Large (50 Liters)'>Large (50 Liters)</option>
+                <select name='size' class='selectDropDown' id='sizeDropDown' onchange="sizeShift()">
+                    <option value='Small (30 Liters)' name='sizes'>Small (30 Liters)</option>
+                    <option value='Medium (40 Liters)' name='sizes'>Medium (40 Liters) +$10</option>
+                    <option value='Large (50 Liters)' name='sizes'>Large (50 Liters) +$20</option>
                 </select>
             </div>
         </div>
@@ -70,10 +69,10 @@
             <div class='selectorClass'>Color</div>
             <div class='selectDropDown'>
                 <div id='colorSquare'></div>
-                <select name='size' class='selectDropDown' id='colorDropDown'>
-                    <option value='Tropical Teal' id='tealSelect'> Tropical Teal</option>
-                    <option value='Galaxy Purple' id='purpleSelect'> Galaxy Purple</option>
-                    <option value='Verdant Green' id='greenSelect'> Verdant Green</option>
+                <select name='color' class='selectDropDown' id='colorDropDown' onchange="colorShift()">
+                    <option value='Tropical Teal' id='tealSelect' name='colors'> Tropical Teal</option>
+                    <option value='Galaxy Purple' id='purpleSelect' name='colors'> Galaxy Purple</option>
+                    <option value='Verdant Green' id='greenSelect' name='colors'> Verdant Green</option>
                 </select>
             </div>
         </div>
