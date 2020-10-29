@@ -1,5 +1,7 @@
+/* Empty Array for cart items to populate */
 var cartItemArr = []
 
+/* This class contains all of the properties of a single cart order object */
  class Order {
      constructor(name, price, size, color) {
          this.name = name;
@@ -9,11 +11,16 @@ var cartItemArr = []
      }
  }
 
+/* Each of these variables will be replaced with the value for the cart item
+They represent the four properties of a single cart order object:
+Name of item, price of item, color of item, and size of item*/
 var itemName = 'blank';
 var itemPrice = 'blank';
 var itemSize = 'blank';
 var itemColor = 'blank';
 
+/* This function changes the color of the square next to the color drop down menu and changes
+the img source of the backpack image to mathc the color selected */
 function colorShift(){
     var colors = document.getElementsByName('colors');
     var chosenColor = 'none'
@@ -36,6 +43,8 @@ function colorShift(){
     }
 }
 
+/* This function changes the displayed price to match the price of the sized backpack
+that the user select  */
 function sizeShift(){
     var sizes = document.getElementsByName('sizes');
     var chosenSize = 'none'
@@ -55,6 +64,9 @@ function sizeShift(){
     }
 }
 
+/* This function populates the four empty variables and then adds the variables as 
+the four properties of the Order class and then pushes that new object into the 
+CartItemArr array */
 function addToCart(){
     var cartTotalDisplay = document.getElementById('cartCount').innerHTML;
     var cartCounter = document.getElementById('cartCount');
@@ -82,10 +94,14 @@ function addToCart(){
     console.log(cartItemArr)
 }
 
+/* This function stringify's the cartItemArr array in local storage*/
 function storeCartOrder(){
     localStorage.setItem('cart', JSON.stringify(cartItemArr))
 }
 
+/* This function gets the cart array form local storage, parses it, updates the cart
+count to reflect the legnth of the array, and then writes two lines of HTML for each
+cart item that list the cart item's four properties*/
 function cartCountPersist(){
     myStorage = window.localStorage;
     var cartDisplay = myStorage.getItem('cart')
