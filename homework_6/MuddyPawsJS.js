@@ -100,5 +100,9 @@ function cartCountPersist(){
     document.getElementById('cartNoItems').innerHTML = cartList
 }
 
+var cartSubTotal = 0
+var cartShipTotal = 0
+var cartGrandTotal = 0
+
 
 
