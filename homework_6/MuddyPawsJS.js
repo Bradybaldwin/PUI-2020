@@ -52,13 +52,13 @@ function sizeShift(){
         if(sizes[i].selected){
             chosenSize = sizes[i].value;
             if (chosenSize == 'Medium (40 Liters)'){
-                    document.getElementById("detailPrice").innerHTML = "$110.00";
+                    document.getElementById("detailPrice").innerHTML = "110.00";
             }
             else if (chosenSize == 'Large (50 Liters)'){
-                document.getElementById("detailPrice").innerHTML = "$120.00";
+                document.getElementById("detailPrice").innerHTML = "120.00";
             }
             else if (chosenSize == 'Small (30 Liters)'){
-                document.getElementById("detailPrice").innerHTML = "$100.00";
+                document.getElementById("detailPrice").innerHTML = "100.00";
             }
         }
     }
@@ -111,14 +111,36 @@ function cartCountPersist(){
 
     var cartList = 'Cart is Work in Progress <br>'
     for (var i = 0; i<cartItemArrLoaded.length; i++) {
-        cartList = cartList +'<br>'+ cartItemArrLoaded[i].name +" "+ cartItemArrLoaded[i].price +'<br>'+ cartItemArrLoaded[i].size +" "+ cartItemArrLoaded[i].color + '<br>'
+        cartList = cartList +'<br>'+ cartItemArrLoaded[i].name +" $"+ cartItemArrLoaded[i].price +'<br>'+ cartItemArrLoaded[i].size +" "+ cartItemArrLoaded[i].color + '<br>'
     }
     document.getElementById('cartNoItems').innerHTML = cartList
 }
 
 var cartSubTotal = 0
-var cartShipTotal = 0
+var cartShipTotal = 4
 var cartGrandTotal = 0
 
+function summaryUpdate(){
+    cartGrandTotal = document.getElementById('cartTotalPrice').innerHTML
 
+    var cartDisplay = myStorage.getItem('cart')
+    var cartItemArrLoaded = JSON.parse(cartDisplay)
+
+    for (var i = 0; i<cartItemArrLoaded.length; i++) {
+        cartSubTotal = Number(cartSubTotal) + Number(cartItemArrLoaded[i].price)
+    }
+    document.getElementById('cartSubPrice').innerHTML = '$' + cartSubTotal + ' USD'
+
+    if (cartItemArrLoaded.length == 0){
+        cartShipTotal = 0;
+    }
+    else{
+        cartShipTotal = 5;
+    }
+
+    document.getElementById('cartShipPrice').innerHTML = '$' + cartShipTotal + ' USD'
+
+    cartGrandTotal = cartShipTotal + cartSubTotal
+    document.getElementById('cartTotalPrice').innerHTML = '$' + cartGrandTotal + ' USD'
+}
 
