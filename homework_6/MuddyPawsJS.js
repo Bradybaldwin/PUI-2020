@@ -99,6 +99,8 @@ function storeCartOrder(){
     localStorage.setItem('cart', JSON.stringify(cartItemArr))
 }
 
+var cartItemDivs = []
+
 /* This function gets the cart array form local storage, parses it, updates the cart
 count to reflect the legnth of the array, and then creates divs and populates them with the cart
 item content. It also gives each type of content a class to be styled in CSS and each
@@ -135,37 +137,61 @@ function cartCountPersist(){
         var cartItemContainer = document.createElement('div')
         cartItemContainer.className = 'itemContainer'
         cartItemContainer.id = 'itemContainer' + [i]
+        cartItemDivs.push(cartItemContainer.id)
         document.getElementById('cartGoHere').appendChild(cartItemContainer)
         console.log(cartItemContainer)
+
+        var cartImageFiller = document.createElement('div')
+        cartImageFiller.className = 'itemImage'
+        var addImageHere = document.createElement('img')
+        addImageHere.src = cartImageAdd[i]
+        addImageHere.className = 'itemImageChild'
+        cartImageFiller.appendChild(addImageHere)
+        document.getElementById('itemContainer' + [i]).appendChild(cartImageFiller)
 
         var cartNameFiller = document.createElement('div')
         cartNameFiller.className = 'itemName'
         cartNameFiller.innerHTML = cartTitleAdd[i]
         document.getElementById('itemContainer' + [i]).appendChild(cartNameFiller)
 
-        var cartPriceFiller = document.createElement('div')
-        cartPriceFiller.className = 'itemPrice'
-        cartPriceFiller.innerHTML = cartPriceAdd[i]
-        document.getElementById('itemContainer' + [i]).appendChild(cartPriceFiller)
-
         var cartSizeFiller = document.createElement('div')
         cartSizeFiller.className = 'itemSize'
-        cartSizeFiller.innerHTML = cartSizeAdd[i]
+        cartSizeFiller.innerHTML = '- ' + cartSizeAdd[i]
         document.getElementById('itemContainer' + [i]).appendChild(cartSizeFiller)
 
         var cartColorFiller = document.createElement('div')
         cartColorFiller.className = 'itemColor'
-        cartColorFiller.innerHTML = cartColorAdd[i]
+        cartColorFiller.innerHTML = '- ' + cartColorAdd[i]
         document.getElementById('itemContainer' + [i]).appendChild(cartColorFiller)
 
-        var cartImageFiller = document.createElement('div')
-        cartColorFiller.className = 'itemImage'
-        var addImageHere = document.createElement('img')
-        addImageHere.src = cartImageAdd[i]
-        cartImageFiller.appendChild(addImageHere)
-        document.getElementById('itemContainer' + [i]).appendChild(cartImageFiller)
+        var cartPriceFiller = document.createElement('div')
+        cartPriceFiller.className = 'itemPrice'
+        cartPriceFiller.innerHTML = 'Price: $' + cartPriceAdd[i] + ' USD'
+        document.getElementById('itemContainer' + [i]).appendChild(cartPriceFiller)
+       
+        /* This child div contains the onlcick funciton that removes a cart item from local
+        storage and reloads the page to reflect the removal */
+        var cartRemoveFiller = document.createElement('div')
+        cartRemoveFiller.className = 'itemRemove'
+        cartRemoveFiller.id = 'itemRemove' + [i]
+        cartRemoveFiller.innerHTML = 'Remove Item'
+        cartRemoveFiller.onclick = function() {
+            var itemID = String(this.id)
+            for (var i = 0; i<cartItemArrLoaded.length; i++) {
+                var arrayLocation = String([i])
+                if (itemID.includes(arrayLocation)) {
+                    cartItemArrLoaded.splice(i,1)
+                    localStorage.setItem('cart', JSON.stringify(cartItemArrLoaded))
+                    document.getElementById('itemContainer' + [i]).remove()
+                    location.reload()
+                }
+            }
+        }
+        document.getElementById('itemContainer' + [i]).appendChild(cartRemoveFiller)
     }
 }
+
+console.log(cartItemDivs)
 
 var cartSubTotal = 0
 var cartShipTotal = 4
