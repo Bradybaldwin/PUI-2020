@@ -100,8 +100,9 @@ function storeCartOrder(){
 }
 
 /* This function gets the cart array form local storage, parses it, updates the cart
-count to reflect the legnth of the array, and then writes two lines of HTML for each
-cart item that list the cart item's four properties*/
+count to reflect the legnth of the array, and then creates divs and populates them with the cart
+item content. It also gives each type of content a class to be styled in CSS and each
+parent div an ID to style as a grid in CSS*/
 function cartCountPersist(){
     myStorage = window.localStorage;
     var cartDisplay = myStorage.getItem('cart')
@@ -109,11 +110,61 @@ function cartCountPersist(){
 
     document.getElementById('cartCount').innerHTML = cartItemArrLoaded.length
 
-    var cartList = 'Cart is Work in Progress <br>'
+    var cartTitleAdd = []
+    var cartPriceAdd = []
+    var cartSizeAdd = []
+    var cartColorAdd = []
+    var cartImageAdd = []
+
     for (var i = 0; i<cartItemArrLoaded.length; i++) {
-        cartList = cartList +'<br>'+ cartItemArrLoaded[i].name +" $"+ cartItemArrLoaded[i].price +'<br>'+ cartItemArrLoaded[i].size +" "+ cartItemArrLoaded[i].color + '<br>'
+        cartTitleAdd.push(cartItemArrLoaded[i].name)
+        cartPriceAdd.push(cartItemArrLoaded[i].price)
+        cartSizeAdd.push(cartItemArrLoaded[i].size)
+        cartColorAdd.push(cartItemArrLoaded[i].color)
+        if (cartItemArrLoaded[i].color == 'Tropical Teal'){
+            cartImageAdd.push('Images/Cat_Backpack_crop.jpg')
+        }
+        else if (cartItemArrLoaded[i].color == 'Galaxy Purple'){
+            cartImageAdd.push('Images/Cat_Backpack_crop_purple.png')
+        }
+        else {
+            cartImageAdd.push("Images/Cat_Backpack_crop_green.png")
+        }
     }
-    document.getElementById('cartNoItems').innerHTML = cartList
+    for (var i = 0; i<cartItemArrLoaded.length; i++) {
+        var cartItemContainer = document.createElement('div')
+        cartItemContainer.className = 'itemContainer'
+        cartItemContainer.id = 'itemContainer' + [i]
+        document.getElementById('cartGoHere').appendChild(cartItemContainer)
+        console.log(cartItemContainer)
+
+        var cartNameFiller = document.createElement('div')
+        cartNameFiller.className = 'itemName'
+        cartNameFiller.innerHTML = cartTitleAdd[i]
+        document.getElementById('itemContainer' + [i]).appendChild(cartNameFiller)
+
+        var cartPriceFiller = document.createElement('div')
+        cartPriceFiller.className = 'itemPrice'
+        cartPriceFiller.innerHTML = cartPriceAdd[i]
+        document.getElementById('itemContainer' + [i]).appendChild(cartPriceFiller)
+
+        var cartSizeFiller = document.createElement('div')
+        cartSizeFiller.className = 'itemSize'
+        cartSizeFiller.innerHTML = cartSizeAdd[i]
+        document.getElementById('itemContainer' + [i]).appendChild(cartSizeFiller)
+
+        var cartColorFiller = document.createElement('div')
+        cartColorFiller.className = 'itemColor'
+        cartColorFiller.innerHTML = cartColorAdd[i]
+        document.getElementById('itemContainer' + [i]).appendChild(cartColorFiller)
+
+        var cartImageFiller = document.createElement('div')
+        cartColorFiller.className = 'itemImage'
+        var addImageHere = document.createElement('img')
+        addImageHere.src = cartImageAdd[i]
+        cartImageFiller.appendChild(addImageHere)
+        document.getElementById('itemContainer' + [i]).appendChild(cartImageFiller)
+    }
 }
 
 var cartSubTotal = 0
