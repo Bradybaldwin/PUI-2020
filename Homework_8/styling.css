@@ -1,0 +1,135 @@
+.nav {
+    background-color: #3DC2AE;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 100%;
+}
+
+.nav-link {
+    color: white;
+}
+
+#name1 {
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+#name2 {
+    font-size: 50px;
+    margin-top: -20px;
+    font-weight: bold;
+}
+
+#tagline {
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+#profilePic {
+    width: 50%;
+}
+
+#whiteboard {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#midBio {
+    padding-top: 30px;
+}
+
+#featWork {
+    padding-top: 30px;
+    font-size: 25px;
+    padding-bottom: 30px;
+}
+
+#homeImg1 {
+    height: 400px;
+    background-image: url(Images/Psych\ Lab\ Image\ 1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 15px;
+}
+
+#p1Title {
+    font-size: 35px;
+    color: white;
+    background-color: #3C9BC3; 
+    border-radius: 0px 15px 0px 15px;
+}
+
+#p1Desc {
+    font-size: 20px;
+    background-color: #bcdae7; 
+    border-radius: 0px 0px 15px 0px;
+}
+
+#p1button {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+#homeImg2 {
+    height: 400px;
+    background-image: url(Images/storyboard\ capture.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 15px;
+}
+
+#p2Title {
+    font-size: 35px;
+    color: white;
+    background-color: #3C9BC3; 
+    border-radius: 0px 15px 0px 15px;
+}
+
+#p2Desc {
+    font-size: 20px;
+    background-color: #bcdae7; 
+    border-radius: 0px 0px 15px 0px;
+}
+
+#p2button {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+#homeImg3 {
+    height: 400px;
+    background-image: url(Images/Noctis-Evadere-Title-01.png);
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 15px;
+}
+
+#p3Title {
+    font-size: 35px;
+    color: white;
+    background-color: #3C9BC3; 
+    border-radius: 0px 15px 0px 15px;
+}
+
+#p3Desc {
+    font-size: 20px;
+    background-color: #bcdae7; 
+    border-radius: 0px 0px 15px 0px;
+}
+
+#p3button {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    text-align: center;
+}
