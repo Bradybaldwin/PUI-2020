@@ -25,31 +25,41 @@
                 <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
+                <a class="nav-link" href="projects_page.html">Projects</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Resume</a>
               </li>
     </nav>
-
     <div class='container'>
-        <div class='row'>
-            <div id='name1' class='col'>Hello, I'm</div>
-        </div>
-        <div class='row'>
-            <div id='name2' class='col'>Brady Baldwin</div>
-        </div>
-    </div>
-    <div class='container'>
-        <div class = 'row'>
-            <div id='tagline' class='col-sm-7'>
-                I have a passion for UX research that focuses 
-                on understanding human cognition to improve digital design.
+        <div class="row">
+            <div class="col-md-8">
+                <div class='container' style='padding: 0;'>
+                    <div class="row">
+                        <div class="col">
+                            <h5 id='name1'>Hello, I'm</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h5 id='name2'>Brady Baldwin</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="tagline">I have a passion for UX research that focuses 
+                                on understanding human cognition to improve digital design.
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class='col'><img src='Images/Profile.png' id='profilePic'></div>
+            <div class="col-md-4">
+                <img  id='profilePic' src='Images/Profile.png' alt="Picture of Brady">
+            </div>
         </div>
     </div>
-    </div>
+
     <div class='container'>
         <div class='row'>
             <div class='col-md'>
@@ -65,11 +75,11 @@
             <div class='col-md'></div>
         </div>
         <div class='row' id='midBio'>
-            <div class='col-md'><img src='Images/whiteboard.jpg' id=whiteboard></div>
+            <div class='col-md'><img src='Images/Customer_Journey_Map_Final.png' alt='Customer Jounrney Map' id=whiteboard></div>
             <div class='col-md'>
                 After graduating from OSU in Spring of 2020 I decided to pursue 
                 futher education in the HCI field by enrolling in the MHCI program 
-                at Carnegie Mellon University. During my time there I learned...
+                at Carnegie Mellon University. During my time there I...
             </div>
         </div>
     </div>
@@ -79,9 +89,24 @@
     </div>
 
     <div class='container'>
-        <div class='row align-items-end' id='homeImg1'>
-            <div class='col' id='p1Title'>CARVE Lab Model</div>
-            <div class='col-9' id='p1Desc'>
+        <div class='row align-items-end' id='homeImg3'>
+            <div class='col-sm align-self-start' id='p3Title'>Educational VR Experience</div>
+            <div class='col-sm-12 align-self-end' id='p3Desc'>
+                Educational VR project designed to raise public 
+                awareness of the strengths and weakness of robotic sensors.
+            </div>
+        </div>
+        <div class='row'>
+            <div id='p3button' class='col-12'>
+                <button type="button" class="btn btn-outline-secondary btn-lg">View Project</button>
+            </div>
+        </div>
+    </div>
+
+    <div class='container'>
+        <div class='row' id='homeImg1'>
+            <div class='col-sm align-self-start' id='p1Title'>CARVE Lab Model</div>
+            <div class='col-sm-12 align-self-end' id='p1Desc'>
                 Created a realistic-scale 3D model of the laboratory where 
                 the CARVE Lab operates and conducts experiments for a crowd control 
                 study.
@@ -96,8 +121,8 @@
 
     <div class='container'>
         <div class='row align-items-end' id='homeImg2'>
-            <div class='col' id='p2Title'>User Research for Local Theater</div>
-            <div class='col-9' id='p2Desc'>
+            <div class='col-sm align-self-start' id='p2Title'>User Research for Local Theater</div>
+            <div class='col-sm-12 align-self-end' id='p2Desc'>
                 Term-long research project conducted for a course 
                 at CMU with a small team. Focused on increasing donations for the 
                 Kelly-Strayhorn Theater in Pittsburgh.
@@ -110,33 +135,19 @@
         </div>
     </div>
 
-    <div class='container'>
-        <div class='row align-items-end' id='homeImg3'>
-            <div class='col' id='p3Title'>Educational VR Experience</div>
-            <div class='col-9' id='p3Desc'>
-                Educational VR project designed to raise public 
-                awareness of the strengths and weakness of robotic sensors.
-            </div>
-        </div>
-        <div class='row'>
-            <div id='p3button' class='col-12'>
-                <button type="button" class="btn btn-outline-secondary btn-lg">View Project</button>
-            </div>
-        </div>
-    </div>
-
-    <div class='container-fluid' style="background-color: black; padding-top: 20px; padding-bottom: 20px; color: grey;">
+    <div class='container-fluid' style="background-color: black;   padding-top: 20px; color: grey;">
         <div class='row align-items-end'>
-            <div class='col'>
-                social image
+            <div class='col'></div>
+                <div class='container'>
+                    <div class='row align-items-end'>
+                        <div class='col'>
+                            <img class='rounded float-right' style="width: 80px; padding-right: 20px;" src='Images/gmail.png'>
+                            <img class='rounded float-right' style="width: 80px; padding-right: 20px;" src='Images/facebook.png'>
+                            <img class='rounded float-right' style="width: 80px; padding-right: 20px;" src='Images/LinkedIn.png'>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class='col'>
-                social image
-            </div>
-            <div class='col'>
-                social image
-            </div>
-        </div>
         <div class='row'>
             <div>Created by Brady Baldwin, 2020</div>
         </div>

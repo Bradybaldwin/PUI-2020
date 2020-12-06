@@ -16,24 +16,32 @@
 
 #name2 {
     font-size: 50px;
-    margin-top: -20px;
     font-weight: bold;
 }
 
 #tagline {
     margin-top: 30px;
     font-size: 25px;
+    margin-bottom: 30px;
 }
 
 #profilePic {
-    width: 50%;
-}
-
-#whiteboard {
-    width: 80%;
+    max-width: 80%;
+    max-height: 80%;
+    width: auto;
+    height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 20px;
+}
+
+#whiteboard {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
 }
 
 #midBio {
@@ -44,11 +52,12 @@
     padding-top: 30px;
     font-size: 25px;
     padding-bottom: 30px;
+    font-weight: bold;
 }
 
 #homeImg1 {
     height: 400px;
-    background-image: url(Images/Psych\ Lab\ Image\ 1.jpg);
+    background-image: url(Images/Psych_Lab_Image_1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -59,14 +68,19 @@
 #p1Title {
     font-size: 35px;
     color: white;
-    background-color: #3C9BC3; 
-    border-radius: 0px 15px 0px 15px;
+    background-color: #3DC2AE; 
+    border-radius: 15px 15px 0px 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 0px 3px 5px #4B4B4B;
 }
 
 #p1Desc {
     font-size: 20px;
-    background-color: #bcdae7; 
-    border-radius: 0px 0px 15px 0px;
+    background-color: #c1ebe5; 
+    border-radius: 0px 0px 15px 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #p1button {
@@ -77,7 +91,7 @@
 
 #homeImg2 {
     height: 400px;
-    background-image: url(Images/storyboard\ capture.JPG);
+    background-image: url(Images/storyboard_capture.JPG);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -88,14 +102,19 @@
 #p2Title {
     font-size: 35px;
     color: white;
-    background-color: #3C9BC3; 
-    border-radius: 0px 15px 0px 15px;
+    background-color: #3DC2AE; 
+    border-radius: 15px 15px 0px 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 0px 3px 5px grey;
 }
 
 #p2Desc {
     font-size: 20px;
-    background-color: #bcdae7; 
-    border-radius: 0px 0px 15px 0px;
+    background-color: #c1ebe5; 
+    border-radius: 0px 0px 15px 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #p2button {
@@ -106,8 +125,7 @@
 
 #homeImg3 {
     height: 400px;
-    background-image: url(Images/Noctis-Evadere-Title-01.png);
-    
+    background-image: url(Images/terracotta.JPG);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -118,18 +136,176 @@
 #p3Title {
     font-size: 35px;
     color: white;
-    background-color: #3C9BC3; 
-    border-radius: 0px 15px 0px 15px;
+    background-color: #3DC2AE; 
+    border-radius: 15px 15px 0px 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 0px 3px 5px #4B4B4B;
 }
 
 #p3Desc {
     font-size: 20px;
-    background-color: #bcdae7; 
-    border-radius: 0px 0px 15px 0px;
+    background-color: #c1ebe5; 
+    border-radius: 0px 0px 15px 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #p3button {
     padding-top: 30px;
     padding-bottom: 60px;
+    text-align: center;
+}
+
+#selWork {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 50px;
+}
+
+#projImg1 {
+    background-image: url(Images/terracotta.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 0px 0px 15px;
+    box-shadow: 5px 0px 10px rgb(126, 126, 126);
+}
+
+#projDesc1 {
+    background-color: #c1ebe5;
+    border-radius: 0px 15px 15px 0px;
+    z-index: -10;
+}
+
+#projTitle1 {
+    font-size: 30px;
+    padding-top: 20px;
+    font-weight: 600;
+}
+
+#projSum1 {
+    padding-bottom: 15px;
+}
+
+#projBtn1{
+    font-size: 50px;
+}
+
+.test {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#projImg2 {
+    background-image: url(Images/Psych_Lab_Image_1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 0px 0px 15px;
+    box-shadow: 5px 0px 10px rgb(126, 126, 126);
+}
+
+#projDesc2 {
+    background-color: #c1ebe5;
+    border-radius: 0px 15px 15px 0px;
+    z-index: -10;
+}
+
+#projTitle2 {
+    font-size: 30px;
+    padding-top: 20px;
+    font-weight: 600;
+}
+
+#projSum2 {
+    padding-bottom: 15px;
+}
+
+#projBtn2 {
+    font-size: 50px;
+}
+
+#projImg3 {
+    background-image: url(Images/storyboard_capture.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 0px 0px 15px;
+    box-shadow: 5px 0px 10px rgb(126, 126, 126);
+}
+
+#projDesc3 {
+    background-color: #c1ebe5;
+    border-radius: 0px 15px 15px 0px;
+    z-index: -10;
+}
+
+#projTitle3 {
+    font-size: 30px;
+    padding-top: 20px;
+    font-weight: 600;
+}
+
+#projSum3 {
+    padding-bottom: 15px;
+}
+
+#projBtn3 {
+    font-size: 50px;
+}
+
+#bottom1{
+    background-image: url(Images/Baldwin_Brady-Poster.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    border-radius:  0px 0px 15px 15px;
+    margin-bottom: 100px;
+}
+
+#bottom2{
+    background-image: url(Images/pd_afinity.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    border-radius:  0px 0px 15px 15px;
+    margin-bottom: 100px;
+}
+
+#bottomName1 {
+    text-align: center;
+    background-color: #c1ebe5;
+    border-radius: 15px 15px 0px 0px;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+#bottomName2 {
+    text-align: center;
+    background-color: #c1ebe5;
+    border-radius: 15px 15px 0px 0px;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+#bottomBtn1{
+    font-size: 40px;
+}
+
+#bottomBtn2{
+    font-size: 40px;
+}
+
+.bottomMargin{
+    margin-top: 150px;
+    margin-bottom: 40px;
     text-align: center;
 }
