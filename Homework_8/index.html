@@ -13,6 +13,7 @@
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3DC2AE;">
         <a class="navbar-brand" href="#">Brady Baldwin</a>
@@ -28,7 +29,7 @@
                 <a class="nav-link" href="projects_page.html">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Resume</a>
+                <a class="nav-link" href="Images/Brady_Baldwin_Resume_9_10_2020.pdf" target="_blank">Resume</a>
               </li>
     </nav>
     <div class='container'>
@@ -47,15 +48,17 @@
                     </div>
                     <div class="row">
                         <div class="col">
-                            <div id="tagline">I have a passion for UX research that focuses 
-                                on understanding human cognition to improve digital design.
+                            <div id="tagline">I have a passion for research that helps better
+                                understand human cognition. My goal is to apply that 
+                                understanding to make our everyday interactions 
+                                with the digital world more intutitve.
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <img  id='profilePic' src='Images/Profile.png' alt="Picture of Brady">
+                <img  id='profilePic' src='Images/GradPic.jpeg.png' alt="Picture of Brady">
             </div>
         </div>
     </div>
@@ -79,7 +82,13 @@
             <div class='col-md'>
                 After graduating from OSU in Spring of 2020 I decided to pursue 
                 futher education in the HCI field by enrolling in the MHCI program 
-                at Carnegie Mellon University. During my time there I...
+                at Carnegie Mellon University. During my time there I... <br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </div>
         </div>
     </div>
@@ -98,7 +107,9 @@
         </div>
         <div class='row'>
             <div id='p3button' class='col-12'>
-                <button type="button" class="btn btn-outline-secondary btn-lg">View Project</button>
+                <a href="Educational_VR_page.html">
+                    <button type="button" class="btn btn-outline-secondary btn-lg">View Project</button>
+                </a>
             </div>
         </div>
     </div>
@@ -141,9 +152,13 @@
                 <div class='container'>
                     <div class='row align-items-end'>
                         <div class='col'>
-                            <img class='rounded float-right' style="width: 80px; padding-right: 20px;" src='Images/gmail.png'>
-                            <img class='rounded float-right' style="width: 80px; padding-right: 20px;" src='Images/facebook.png'>
-                            <img class='rounded float-right' style="width: 80px; padding-right: 20px;" src='Images/LinkedIn.png'>
+                            <img onclick='showMail()' id='mailButton' class='rounded float-right' style="width: 80px; padding-right: 20px;" src='Images/gmail.png'>
+                            <a href="https://www.facebook.com/brady.baldwin.50" target="_blank">
+                                <img class='rounded float-right' style="width: 80px; padding-right: 20px;" src='Images/facebook.png'>
+                            </a>
+                            <a href="https://www.linkedin.com/in/brady-baldwin/" target="_blank">
+                                <img class='rounded float-right' style="width: 80px; padding-right: 20px;" src='Images/LinkedIn.png'>
+                            </a>
                         </div>
                     </div>
                 </div>

@@ -309,3 +309,73 @@
     margin-bottom: 40px;
     text-align: center;
 }
+
+#mailButton{
+    cursor: pointer;
+}
+
+#vrHeadBG{
+    background: linear-gradient(#4A9FBA 70%, white);
+}
+
+#vrTitle{
+    color: white;
+    padding-top: 20px;
+    font-size: 80px;
+}
+
+#vrSum{
+    margin-top: 30px;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 80px;
+}
+
+#vrGreybox1{
+    object-fit: contain;
+}
+
+#vrProjGoals{
+    color: #4A9FBA;
+    font-size: 40px;
+    padding-top: 80px;
+}
+
+#vrOverview{
+    font-size: 40px; 
+    padding-top: 100px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: white white black white;
+}
+
+#vrProjGoalsBorder{
+    border-width: 4px;
+    border-style: solid;
+    border-color: #4A9FBA #4A9FBA white white;
+}
+
+#vrProjGoalsDesc{
+    font-size: 20px;
+}
+
+#vrCollab{
+    color: #4A9FBA;
+    font-size: 40px;
+    padding-top: 80px;
+}
+
+#vrCollabDesc{
+    font-size: 20px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #4A9FBA white white #4A9FBA ;
+    margin-bottom: 100px;
+}
+
+#vrCollabImg{
+    max-width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
