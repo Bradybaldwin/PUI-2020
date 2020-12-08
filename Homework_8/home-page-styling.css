@@ -1,0 +1,169 @@
+/* nav */
+#topNavHome {
+    background-color: #3DC2AE;
+    font-size: 120%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+#homeNavMain {
+    padding: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* header */
+#name1 {
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+#name2 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#tagline {
+    margin-top: 30px;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+#profilePic {
+    max-width: 80%;
+    max-height: 80%;
+    width: auto;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+
+/* bio section styles */
+#whiteboard {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+}
+
+#midBio {
+    padding-top: 30px;
+}
+
+#featWork {
+    padding-top: 30px;
+    font-size: 25px;
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+
+/* featured project 1 stlyes */
+#homeImg1 {
+    height: 400px;
+    background-image: url(Images/Psych_Lab_Image_1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 15px;
+}
+
+#p1Title {
+    font-size: 35px;
+    color: white;
+    background-color: #3DC2AE; 
+    border-radius: 15px 15px 0px 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 0px 3px 5px #4B4B4B;
+}
+
+#p1Desc {
+    font-size: 20px;
+    background-color: #c1ebe5; 
+    border-radius: 0px 0px 15px 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#p1button {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+/* featured project 2 stlyes */
+#homeImg2 {
+    height: 400px;
+    background-image: url(Images/storyboard_capture.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 15px;
+}
+
+#p2Title {
+    font-size: 35px;
+    color: white;
+    background-color: #3DC2AE; 
+    border-radius: 15px 15px 0px 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 0px 3px 5px grey;
+}
+
+#p2Desc {
+    font-size: 20px;
+    background-color: #c1ebe5; 
+    border-radius: 0px 0px 15px 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#p2button {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+/* featured project 3 stlyes */
+#homeImg3 {
+    height: 400px;
+    background-image: url(Images/terracotta.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 15px;
+}
+
+#p3Title {
+    font-size: 35px;
+    color: white;
+    background-color: #3DC2AE; 
+    border-radius: 15px 15px 0px 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 0px 3px 5px #4B4B4B;
+}
+
+#p3Desc {
+    font-size: 20px;
+    background-color: #c1ebe5; 
+    border-radius: 0px 0px 15px 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#p3button {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    text-align: center;
+}

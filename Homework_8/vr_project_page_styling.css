@@ -1,0 +1,236 @@
+/* nav stlying */
+#topNavVR {
+    background-color: #3DC2AE;
+    font-size: 120%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+#vrNavMain {
+    padding: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* 
+*****re-used styles throughout every container*****
+ Subhead=blue headings
+ headings=black section headings
+ sub border=blue style lines with subheadings
+ sub desc=sub section text
+ brainstorm img = all images in subheading containers (keeps them bound within)
+ sum list stlye = style for all accordion lists
+ sum list text = stlye for text in accordion list
+ */
+
+.vrSubHead{
+    color: #4A9FBA;
+    font-size: 40px;
+    padding-top: 80px;
+}
+
+.vrHeadings{
+    font-size: 40px; 
+    padding-top: 100px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: white white black white;
+}
+
+.vrSubBorder{
+    border-width: 4px;
+    border-style: solid;
+    border-color: #4A9FBA #4A9FBA white white;
+}
+
+.vrSubDesc{
+    font-size: 20px;
+}
+
+.brainstormImgVR{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.vrSumListStyle {
+    background-color: #B2C4CA;
+    border-radius: 15px;
+    margin-top: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.vrSumListNum {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    background-color: #3DC2AE;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    display: block;
+    margin: auto;
+    padding-top: 18px
+}
+
+.vrSumListText {
+    font-size: 30px;
+    padding-top: 18px
+}
+
+/* Header */
+#vrHeadBG{
+    background: linear-gradient(#4A9FBA 70%, white);
+}
+
+#vrTitle{
+    color: white;
+    padding-top: 20px;
+    font-size: 80px;
+}
+
+#vrSum{
+    margin-top: 30px;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 80px;
+}
+
+#vrGreybox1{
+    object-fit: contain;
+}
+
+/* blank div border */
+#vrSubBorderBlank{
+    border-width: 4px;
+    border-style: solid;
+    border-color: #4A9FBA #4A9FBA white white;
+}
+
+/* collaboration section styling */
+#vrCollab{
+    color: #4A9FBA;
+    font-size: 40px;
+    padding-top: 80px;
+}
+
+#vrCollabDesc{
+    font-size: 20px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #4A9FBA white white #4A9FBA ;
+}
+
+#vrCollabImg{
+    max-width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* decisions accordion stlyes */
+#decisionsSeg1{
+    margin-bottom: 20px; 
+}
+
+#decisionsSeg2{
+    margin-bottom: 20px; 
+}
+
+#decisionsSeg3{
+
+}
+
+#decisionsAccordion{
+    padding-top: 20px;
+}
+
+#decisions1{
+    background-color: #90cec5;
+    border-radius: 15px;
+}
+
+#decisions2{
+    background-color: #90cec5;
+    border-radius: 15px;
+}
+
+#decisions3{
+    background-color: #90cec5;
+    border-radius: 15px;
+}
+
+/* greyboxing image styles */
+#oversizedImgVR{
+    width: 600px;
+    margin-top: -100px;
+}
+
+#inlineGBVR{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+/* modeling section styles */
+#vrModelingImgBorder {
+    border-style: solid;
+    border-color: #4A9FBA white white #4A9FBA ;
+    border-width: 4px;
+}
+
+.modelingImgVR{
+    object-fit: cover;
+    height: 400px;
+    width: 100%;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.modelingCap {
+    font-size: 20px;
+    text-align: center;
+    color: #4B4B4B;
+}
+
+/* takeaway seciton accordion styles */
+#taSeg1{
+    margin-bottom: 20px; 
+}
+
+#taSeg2{
+    margin-bottom: 20px; 
+}
+
+#taSeg3{
+
+}
+
+#taAccordion{
+    padding-top: 20px;
+}
+
+#ta1{
+    background-color: #90cec5;
+    border-radius: 15px;
+}
+
+#ta2{
+    background-color: #90cec5;
+    border-radius: 15px;
+}
+
+#ta3{
+    background-color: #90cec5;
+    border-radius: 15px;
+}
