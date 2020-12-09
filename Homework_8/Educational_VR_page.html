@@ -14,6 +14,8 @@
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
     <script src="main.js"></script>
 
     <!-- Nav -->
@@ -48,7 +50,7 @@
         <div class='container'>
             <div class="row">
                 <div class="col-lg-8">
-                    <div class='container'>
+                    <div class='container' id='vrHeadsub'>
                         <div class="row">
                             <div class="col">
                                 <h4 id='vrTitle'>Noctis Evadere</h4>
@@ -80,13 +82,13 @@
     <div class='container'>
         <div class='row'>
             <div class='col-5'>
-                <div class='vrHeadings'>Overview</div>
+                <div class='vrHeadings' id='vrOvrAnim'>Overview</div>
             </div>
         </div>
     </div>
 
     <!-- project goals container -->
-    <div class='container'>
+    <div class='container'  id='vrProjGoalsAnim'>
         <div class='row'>
             <div class='col-md-5'>
                 <div class='vrSubHead'>Project Goals</div>
@@ -111,7 +113,7 @@
     </div>
 
     <!-- Collaboration container -->
-    <div class='container'>
+    <div class='container' id='collabContAnim'>
         <div class='row'>
             <div class='col-md-8' id='vrCollab'>
                 Collaboration
@@ -137,7 +139,7 @@
     </div>
 
     <!-- Brainstorming header -->
-    <div class='container'>
+    <div class='container' id='brainstormAnim'>
         <div class='row'>
             <div class='col-5'>
                 <div class='vrHeadings'>Brainstorm</div>
@@ -146,7 +148,7 @@
     </div>
 
     <!-- Initial planning container -->
-    <div class='container'>
+    <div class='container' id='initPlanAnim'>
         <div class='row'>
             <div class='col-md-5'>
                 <div class='vrSubHead'>Initial Planning</div>
@@ -167,7 +169,7 @@
     </div>
 
     <!-- expert feedback container -->
-    <div class='container'>
+    <div class='container' id='expertAnim'>
         <div class='row'>
             <div class='col-md-5'>
                 <div class='vrSubHead'>Expert Feedback</div>
@@ -188,7 +190,7 @@
     </div>
 
     <!-- Final decisions container -->
-    <div class='container'>
+    <div class='container' id='vrFinalDAnim'>
         <div class='row'>
             <div class='col-12' id='vrProjGoals'>
                 <div class='vrSubHead'>Final Decisions</div>
@@ -248,13 +250,13 @@
     <div class='container'>
         <div class='row'>
             <div class='col-5'>
-                <div class='vrHeadings'>Design Process</div>
+                <div class='vrHeadings' id='vrDesignAnim'>Design Process</div>
             </div>
         </div>
     </div>
 
     <!-- Greyboxing container -->
-    <div class='container'>
+    <div class='container' id='vrGreyAnim'>
         <div class='row'>
             <div class='col-md-5'>
                 <div class='vrSubHead'>Autodesk Maya: Greyboxing</div>
@@ -278,7 +280,7 @@
     </div>
 
     <!-- Modeling container -->
-    <div class='container'>
+    <div class='container' id='vrModelingAnim'>
         <div class='row'>
             <div class='col-md-8'>
                 <div class='vrSubHead'>Autodesk Maya: Modeling and Lighting</div>
@@ -352,7 +354,7 @@
     </div>
 
     <!-- Interaction container -->
-    <div class='container'>
+    <div class='container' id='vrUnityAnim'>
         <div class='row'>
             <div class='col-md-5'>
                 <div class='vrSubHead'>Unity: Interaction</div>
@@ -373,7 +375,7 @@
     </div>
 
     <!-- final product header -->
-    <div class='container'>
+    <div class='container' id='vrFinalAnim'>
         <div class='row'>
             <div class='col-5'>
                 <div class='vrHeadings'>Final Product</div>
@@ -382,7 +384,7 @@
     </div>
 
     <!-- container with embedded video from google drive and description -->
-    <div class='container'>
+    <div class='container' id='vrVidAnim'>
         <div class='row'>
             <div class='col'>
                 <iframe src="https://drive.google.com/file/d/1T7iGVaevVXY7mqTM5EmwRnPiZ1fgjubJ/preview" width="90%" height="600px" style="padding-top: 40px;"></iframe>
@@ -401,7 +403,7 @@
     </div>
 
     <!-- Takeaways container -->
-    <div class='container'>
+    <div class='container' id='vrTakeAnim'>
         <div class='row'>
             <div class='col-md-5'>
                 <div class='vrSubHead'>Takeaways</div>

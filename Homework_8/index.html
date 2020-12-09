@@ -14,6 +14,8 @@
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
     <script src="main.js"></script>
 
     <!-- Site Nav -->
@@ -55,7 +57,7 @@
                     </div>
                     <div class="row">
                         <div class="col">
-                            <div id="tagline">I have a passion for research that helps better
+                            <div id="tagline" class='animTag'>I have a passion for research that helps better
                                 understand human cognition. My goal is to apply that 
                                 understanding to make our everyday interactions 
                                 with the digital world more intutitve.
@@ -65,12 +67,14 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <img  id='profilePic' src='Images/GradPic.jpeg.png' alt="Picture of Brady">
+                <img  id='profilePic' src='Images/GradPic.jpeg.png' alt="Picture of Brady" class="animTag">
             </div>
         </div>
     </div>
+    </div>
 
     <!-- Bio -->
+    <div class='homeMain2'>
     <div class='container'>
         <div class='row'>
             <div class='col-md'>
@@ -100,6 +104,7 @@
             </div>
         </div>
     </div>
+    </div>
 
     <!-- Featured Work Header -->
     <div class='container' id='featWork'>
@@ -107,6 +112,7 @@
     </div>
 
     <!-- Containers with 3 featured project titles, images and descriptions -->
+    <div class='homeScroll1'>
     <div class='container'>
         <div class='row align-items-end' id='homeImg3'>
             <div class='col-sm align-self-start' id='p3Title'>Educational VR Experience</div>
@@ -123,7 +129,9 @@
             </div>
         </div>
     </div>
+    </div>
 
+    <div class='homeScroll2'>
     <div class='container'>
         <div class='row' id='homeImg1'>
             <div class='col-sm align-self-start' id='p1Title'>CARVE Lab Model</div>
@@ -139,7 +147,9 @@
             </div>
         </div>
     </div>
-
+    </div>
+    
+    <div class='homeScroll3'>
     <div class='container'>
         <div class='row align-items-end' id='homeImg2'>
             <div class='col-sm align-self-start' id='p2Title'>User Research for Local Theater</div>
@@ -154,6 +164,7 @@
                 <button type="button" class="btn btn-outline-secondary btn-lg">View Project</button>
             </div>
         </div>
+    </div>
     </div>
 
     <!-- Footer -->
