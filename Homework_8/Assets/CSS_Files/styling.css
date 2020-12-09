@@ -1,0 +1,43 @@
+/* universal nav font color */
+.nav-link {
+    color: white;
+}
+
+/* progress bar styling */
+.progBarBG {
+    Width: 100%;
+    height: 6px;
+    background-color: lightgrey;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 60px;
+    z-index: 11;
+}
+
+.progBar {
+    Width: 0%;
+    height: 6px;
+    background-color: #4A9FBA;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 56px;
+    z-index: 9;
+}
+
+.test {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* margins between divs */
+.bottomMargin{
+    margin-top: 150px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* change cursor on hover over mail button */
+#mailButton{
+    cursor: pointer;
+}
